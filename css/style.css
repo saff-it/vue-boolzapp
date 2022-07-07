@@ -83,3 +83,22 @@ div.ms_notific-txt span.ms_active-ntf{
     color: dimgrey;
     
 }
+
+
+div.ms_src-bar-container{
+    padding: 6px;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: center;
+
+}
+
+div.ms_src-bar-container div{
+    text-align: center;
+    width: 20%;
+    background-color: white;
+}
+
+div.ms_src-bar-container input{
+    border-radius: 0;
+}
