@@ -24,4 +24,29 @@ div.container{
 
 }
 
+/* avatar box  */
+div.ms_avatar-box{
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.ms_avatar-img{
+    height: 50px;
+    margin: 8px 0 8px 5px;
+    
+}
+
+div.ms_avatar-img img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+div.ms_icons-items i{
+    font-size: 1.5rem;
+    margin: auto 4px;
+    color: dimgrey;
+}
+
 
