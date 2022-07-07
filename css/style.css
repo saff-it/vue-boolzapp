@@ -24,6 +24,7 @@ div.container{
 
 }
 
+
 /* avatar box  */
 div.ms_avatar-box{
     background-color: #EAEAEA;
@@ -50,3 +51,35 @@ div.ms_icons-items i{
 }
 
 
+/* notification toggle box  */
+
+div.ms_notification-box{
+    background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
+}
+
+div.ms_notification-box i{
+    font-size: 2rem;
+    margin: 8px;
+    padding: 10px;
+    color: white;
+   
+}
+
+div.ms_notific-txt{
+    margin-top: 6px;
+}
+
+div.ms_notific-txt span.ms_ntf-txt{
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 0.5rem;
+}
+
+div.ms_notific-txt span.ms_active-ntf{
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: dimgrey;
+    
+}
