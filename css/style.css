@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #f3f2ed;
 }
 
 
@@ -17,10 +18,10 @@ div.ms_header-setup{
 /* MAIN */
 
 div.container{
-    height: 750px;
     width: 1200px;
     position: relative;
     top: -120px;
+
 
 }
 
@@ -61,20 +62,19 @@ div.ms_notification-box{
 
 div.ms_notification-box i{
     font-size: 2rem;
-    margin: 8px;
-    padding: 10px;
+    margin: 15px;
     color: white;
    
 }
 
 div.ms_notific-txt{
-    margin-top: 6px;
+    line-height: 0.9rem;
 }
+
 
 div.ms_notific-txt span.ms_ntf-txt{
     font-size: 0.9rem;
     font-weight: bold;
-    line-height: 0.5rem;
 }
 
 div.ms_notific-txt span.ms_active-ntf{
@@ -85,9 +85,10 @@ div.ms_notific-txt span.ms_active-ntf{
 }
 
 
+/* contact list - search bar */
+
 div.ms_src-bar-container{
     padding: 6px;
-    background-color: #EAEAEA;
     display: flex;
     align-items: center;
 
@@ -99,6 +100,58 @@ div.ms_src-bar-container div{
     background-color: white;
 }
 
-div.ms_src-bar-container input{
+div.ms_src-bar-container input,
+div.ms_src-icon{
     border-radius: 0;
+}
+
+
+/* contact list box  */
+
+div.ms_constact-list-box{
+    background-color: white;
+    height: 600px;
+}
+
+div.ms_single-cntct-box{
+    background-color: white;
+    display: flex;
+    padding: 12px 15px;
+    border-top: 1px solid #f3f2ed;
+
+}
+
+div.ms_single-cntct-box img{
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+div.ms_contact-name{
+    line-height: 1rem;
+    margin-left: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.ms_contant-name-txt{
+    width: 90%;
+}
+
+div.ms_contant-name-txt span.ms_user-name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div.ms_contant-name-txt span.ms_last-msg-sent{
+    font-size: 0.8rem;
+    color: lightgray;
+}
+
+
+div.ms_contant-name-time span{
+    font-size: 0.8rem;
+    color: lightgray;
+    text-align: left;
 }
