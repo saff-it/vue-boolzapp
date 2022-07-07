@@ -5,6 +5,10 @@ body{
     background-color: #f3f2ed;
 }
 
+div.col-12{
+    height: 800px;
+    background-color: white;
+}
 
 
 /* HEADER */
@@ -15,7 +19,7 @@ div.ms_header-setup{
 }
 
 
-/* MAIN */
+/* MAIN - LEFT COLUMNS */
 
 div.container{
     width: 1400px;
@@ -97,7 +101,6 @@ div.ms_src-bar-container{
 div.ms_src-bar-container div{
     text-align: center;
     width: 20%;
-    background-color: white;
 }
 
 div.ms_src-bar-container input,
@@ -108,13 +111,7 @@ div.ms_src-icon{
 
 /* contact list box  */
 
-div.ms_constact-list-box{
-    background-color: white;
-    height: 600px;
-}
-
 div.ms_single-cntct-box{
-    background-color: white;
     display: flex;
     padding: 12px 15px;
     border-top: 1px solid #f3f2ed;
@@ -154,4 +151,11 @@ div.ms_contant-name-time span{
     font-size: 0.8rem;
     color: lightgray;
     text-align: left;
+}
+
+
+/* MAIN - RIGHT COLUMNS */
+
+div.ms_chat-room{
+    height: calc();
 }
