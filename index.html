@@ -121,8 +121,8 @@
                                     <div class="ms_avatar-box">
 
                                         <div class="ms_avatar-img">
-                                            <img src="./img/avatar_1.jpg" alt="avatar">
-                                            <span class="fw-bold" >Michele</span>
+                                            <img :src="'./img/avatar' + contacts[activeIndex].avatar + '.jpg' " alt="avatar">
+                                            <span class="fw-bold" >{{ contacts[activeIndex].name }}</span>
                                         </div>
 
                                         <div class="ms_icons-items">
