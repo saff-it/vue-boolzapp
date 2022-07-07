@@ -168,12 +168,14 @@ const app = new Vue (
                     ],
                 },
             ],
+
+            activeIndex: 0,
                        
         },
 
         methods: {
-            funzione: function(){
-                
+            setActiveElement: function(indexValue){
+                this.activeIndex = indexValue;
 
             },
 
