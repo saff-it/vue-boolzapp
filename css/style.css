@@ -158,7 +158,7 @@ div.ms_contant-name-time span{
 
 div.ms_chat-room{
     height: calc(100% - 66px - 66px);
-    background-color: burlywood;
+    background-image: url(../img/mine.jpg);
 }
 
 div.ms_input-bar{
