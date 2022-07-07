@@ -1,3 +1,28 @@
+/* COMMON RULES */
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+
+
+/* HEADER */
+
+div.ms_header-setup{
+    height: 140px;
+    background-color: #009688;
+}
+
+
+/* MAIN */
+
+div.container{
+    height: 750px;
+    width: 1200px;
+    background-color: blue;
+    position: relative;
+    top: -120px;
+
+}
+
+
