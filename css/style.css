@@ -27,8 +27,7 @@ div.ms_header-setup{
 div.container{
     width: 1400px;
     position: relative;
-    top: -120px;
-
+    bottom: 100px;
 
 }
 
