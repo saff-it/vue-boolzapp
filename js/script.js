@@ -171,6 +171,7 @@ const app = new Vue (
 
             activeIndex: 0,
             userInputText: '',
+            
                        
         },
 
@@ -189,6 +190,17 @@ const app = new Vue (
                     });
 
                 this.userInputText = '';
+
+                setTimeout( () => {
+                    this.contacts[this.activeIndex].messages.push(
+                        {
+                            date:'10/01/2020 15:30:55',
+                            message: 'Ok',
+                            status: 'received'
+                        });
+    
+                }, 1000);
+
             },
 
         },
