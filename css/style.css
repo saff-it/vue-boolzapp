@@ -14,25 +14,26 @@ div.col-12{
     background-color: lightslategray;
 }
 
-/* HEADER */
 
+
+
+/* MAIN */
 div.ms_header-setup{
     height: 140px;
     background-color: #009688;
 }
 
-
-/* MAIN - LEFT COLUMNS */
-
 div.container{
     width: 1400px;
     position: relative;
     bottom: 100px;
-
 }
 
 
+/* MAIN - LEFT COLUMNS */
+
 /* avatar box  */
+
 div.ms_avatar-box{
     background-color: #EAEAEA;
     display: flex;
@@ -70,13 +71,11 @@ div.ms_notification-box i{
     font-size: 1.5rem;
     margin: 15px;
     color: white;
-   
 }
 
 div.ms_notific-txt{
     line-height: 0.9rem;
 }
-
 
 div.ms_notific-txt span.ms_ntf-txt{
     font-size: 0.9rem;
@@ -87,7 +86,6 @@ div.ms_notific-txt span.ms_active-ntf{
     font-size: 0.8rem;
     text-decoration: underline;
     color: dimgrey;
-    
 }
 
 
@@ -97,7 +95,6 @@ div.ms_src-bar-container{
     padding: 6px;
     display: flex;
     align-items: center;
-
 }
 
 div.ms_src-bar-container div{
@@ -117,13 +114,11 @@ div.ms_single-cntct-box{
     display: flex;
     padding: 12px 15px;
     border-top: 1px solid #f3f2ed;
-
 }
 
 div.ms_single-cntct-box img{
     height: 50px;
     border-radius: 50%;
-    
 }
 
 div.ms_contact-name{
@@ -175,14 +170,12 @@ div.ms_message{
 div.ms_message div:first-child{
     font-size: 0.8rem;
     padding: 12px 0 0 12px;
-
 }
 
 div.ms_message div:last-child{
     font-size: 0.6rem;
     padding: 0 4px 2px 0;
-    text-align: end;
-       
+    text-align: end;     
 }
 
 div.ms_message.received{

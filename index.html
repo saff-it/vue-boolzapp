@@ -69,6 +69,7 @@
                                             <span class="d-block ms_ntf-txt">Ricevi notifiche di nuovi messaggi</span>
                                             <span class="ms_active-ntf">Attiva notifiche desktop</span>
                                         </div>
+
                                     </div>
 
                                     <!-- contact list box -->
@@ -76,6 +77,7 @@
 
                                         <!-- search-bar  -->
                                         <div class="ms_src-bar-container">
+
                                             <div class="form-control ms_src-icon ">
                                                 <i class="bi bi-search"></i>
                                             </div>
@@ -85,11 +87,12 @@
 
                                         <!-- constacts column -->
                                         <div class="ms_contacts-box">
+
                                             <div class="ms_single-cntct-box" 
                                                 :class="{ active: index === activeIndex }"
                                                 @click="setActiveElement(index)"
-                                                v-for="(contact, index) in contacts">
-
+                                                v-for="(contact, index) in contacts"
+                                            >
                                                 <img :src="'./img/avatar' + contact.avatar + '.jpg' " alt="avatar">
 
                                                 <div class="ms_contact-name">
@@ -146,7 +149,6 @@
                                             <div class="col-6">
 
                                                 <div class="ms_message sent">
-                                                     
                                                     <div> {{ userMessage.message }} </div>
                                                     <div> {{ userMessage.date }} </div> 
                                                 </div>
