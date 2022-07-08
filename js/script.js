@@ -170,6 +170,7 @@ const app = new Vue (
             ],
 
             activeIndex: 0,
+            userInputText: '',
                        
         },
 
@@ -177,6 +178,17 @@ const app = new Vue (
             setActiveElement: function(indexValue){
                 this.activeIndex = indexValue;
 
+            },
+
+            newMessagePush: function(){
+                this.contacts[this.activeIndex].messages.push(
+                    {
+                        date:'10/01/2020 15:30:55',
+                        message: this.userInputText,
+                        status: 'sent'
+                    });
+
+                this.userInputText = '';
             },
 
         },
