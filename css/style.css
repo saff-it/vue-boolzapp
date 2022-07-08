@@ -168,7 +168,7 @@ div.ms_chat-room{
 div.ms_message{
     width: 70%;
     border-radius: 8px;
-    margin: 14px auto;
+    margin: 10px auto;
 }
 
 div.ms_message div:first-child{
