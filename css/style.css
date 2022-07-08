@@ -158,10 +158,30 @@ div.ms_contant-name-time span{
 
 /* MAIN - RIGHT COLUMNS */
 
+/* chat box  */
+
 div.ms_chat-room{
     height: calc(100% - 66px - 66px);
     background-image: url(../img/mine.jpg);
 }
+
+div.ms_message{
+    width: 70%;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+div.ms_message.received{
+    background-color: white;
+}
+
+div.ms_message.sent{
+    background-color: #D5F9BA;
+}
+
+
+
+/* bottom input bar  */
 
 div.ms_input-bar{
     height: 66px;
