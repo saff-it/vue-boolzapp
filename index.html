@@ -139,14 +139,15 @@
                                     <!-- chat room  -->
                                     <div class="ms_chat-room">
 
-                                        <div class="row flex-row-reverse">
-
+                                        <div class="row"
+                                            v-for="contact in contacts[activeIndex].messages"
+                                            v-if="contact.status === 'sent' "                                       
+                                        >
                                             <div class="col-6">
 
-                                                <div class="ms_message sent"
-                                                     v-for="contact in contacts[activeIndex].messages"
-                                                     v-if="contact.status === 'sent' "
-                                                >
+                                                <div class="ms_message sent">
+                                                     
+                                                
                                                     <div> {{ contact.message }} </div>
                                                     <div> {{ contact.date }} </div> 
                                                 </div>
@@ -155,7 +156,9 @@
                                           
                                         </div>
 
-                                        <div class="row">
+                                        <div class="row"
+                                            v-else-if="contact.status === 'received' "
+                                        >
 
                                             <div class="col-6">
 

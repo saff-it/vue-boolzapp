@@ -190,6 +190,7 @@ div.ms_message.received{
 
 div.ms_message.sent{
     background-color: #D5F9BA;
+    align-self: flex-end;
 }
 
 
