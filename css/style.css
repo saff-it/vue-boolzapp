@@ -67,7 +67,7 @@ div.ms_notification-box{
 }
 
 div.ms_notification-box i{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 15px;
     color: white;
    
@@ -168,7 +168,20 @@ div.ms_chat-room{
 div.ms_message{
     width: 70%;
     border-radius: 8px;
-    padding: 12px;
+    margin: 14px auto;
+}
+
+div.ms_message div:first-child{
+    font-size: 0.8rem;
+    padding: 12px 0 0 12px;
+
+}
+
+div.ms_message div:last-child{
+    font-size: 0.6rem;
+    padding: 0 4px 2px 0;
+    text-align: end;
+       
 }
 
 div.ms_message.received{
