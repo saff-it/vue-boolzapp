@@ -162,6 +162,7 @@ div.ms_contant-name-time span{
 
 div.ms_chat-room{
     height: calc(100% - 66px - 66px);
+    overflow-y: auto;
     background-image: url(../img/mine.jpg);
 }
 

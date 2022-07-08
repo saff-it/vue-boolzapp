@@ -181,6 +181,13 @@ const app = new Vue (
 
             },
 
+
+            bottomScroll:( () => {
+                const container = this.$el.querySelector("div.ms_chat-room");
+                container.scrollTop = container.scrollHeight;
+            }),
+
+
             newMessagePush: function(){
                 this.contacts[this.activeIndex].messages.push(
                     {
@@ -200,6 +207,8 @@ const app = new Vue (
                         });
     
                 }, 1000);
+
+                this.bottomScroll();
 
             },
 
