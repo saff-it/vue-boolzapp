@@ -188,6 +188,12 @@ div.ms_message.sent{
     align-self: flex-end;
 }
 
+button.dropdown{
+    background: none;
+    color: dimgray;
+    border: none;
+    padding: 0;
+}
 
 
 /* bottom input bar  */
