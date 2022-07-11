@@ -192,6 +192,7 @@ const app = new Vue (
 
 
         methods: {
+
             setActiveElement: function(indexValue){
                 this.activeIndex = indexValue;
 
@@ -199,6 +200,7 @@ const app = new Vue (
 
 
             newMessagePush: function(){
+                
                 this.contacts[this.activeIndex].messages.push(
                     {
                         date:'10/01/2020 15:30:55',
@@ -220,14 +222,19 @@ const app = new Vue (
 
             },
 
-            listFilter: function(index){
-                if (this.contact[index].name.toLowerCase().includes(this.userSearch.toLowerCase())){
-                    this.contacts[index].visible == true;
 
-                } else {
-                    this.contacts[index].visible == false;
+            listFilter() {
+                this.contacts.foreach(contact => {
+                    if (this.contact.name.toLowerCase().includes(this.userSearch.toLowerCase())){
+                        this.contacts.visible == true;
 
-                }
+                    } else {
+                        this.contacts.visible == false;
+
+                    }
+
+                });
+                   
             },
 
         },
