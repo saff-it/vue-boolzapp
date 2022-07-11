@@ -224,12 +224,12 @@ const app = new Vue (
 
 
             listFilter: function() {
-                this.contacts.foreach(element => {
-                    if (this.element.name.toLowerCase().includes(this.userSearch.toLowerCase())){
-                        this.element.visible == true;
+                this.contacts.forEach(contact => {
+                    if (contact.name.toLowerCase().includes(this.userSearch.toLowerCase())){
+                        contact.visible = true;
 
                     } else {
-                        this.element.visible == false;
+                        contact.visible = false;
 
                     }
 

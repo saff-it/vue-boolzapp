@@ -92,7 +92,7 @@
                                                 :class="{ active: index === activeIndex }"
                                                 @click="setActiveElement(index)"
                                                 v-for="(contact, index) in contacts"
-                                                v-if="contacts.visible == 'true'"
+                                                v-if="contact.visible" 
                                             >
                                                 <img :src="'./img/avatar' + contact.avatar + '.jpg' " alt="avatar">
 
