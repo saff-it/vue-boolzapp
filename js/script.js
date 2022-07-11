@@ -13,12 +13,12 @@ const app = new Vue (
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Hai portato a spasso il cane?',
+                            message: 'Ciao joy!',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Ricordati di stendere i panni',
+                            message: 'Oggi è il 9 luglio!',
                             status: 'sent'
                         },
                         {
@@ -171,6 +171,15 @@ const app = new Vue (
 
             activeIndex: 0,
             userInputText: '',
+            userSearch: '',
+
+            computed: {
+                filteredList() {
+                    return this.contacts.filter(contact => {
+                        return contact.name.toLowerCase().includes(this.userSearch.toLowerCase())
+                }),
+
+            },
             
                        
         },
@@ -202,6 +211,11 @@ const app = new Vue (
     
                 }, 1000);
 
+            },
+
+            filteredList: function() {
+                
+                });
             },
 
         },
