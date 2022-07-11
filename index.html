@@ -152,15 +152,26 @@
                                                 <div class="ms_message sent">
 
                                                     <div class="d-flex justify-content-between">
+
                                                         <div>
                                                             {{ userMessage.message }} 
                                                         </div>
 
                                                         <div>
-                                                            <i class="bi bi-caret-down-fill"></i>
-                                                            <ul class="ms_active-dd">
+                                                            <i class="bi bi-caret-down-fill"
+                                                                @click="activateDropDown()"
+                                                                
+
+                                                            >
+                                                            </i>
+
+                                                            <ul class="ms_disactive-dd"
+                                                                v-if="isMenuShown == true"
+                                                                :class="{ 'ms_active-dd': activeIndex === activeDropDown }"
+                                                            >
                                                                 <li>Elimina Messaggio</li>
                                                             </ul>
+
                                                         </div>
                                                         
                                                     </div>

@@ -170,25 +170,13 @@ const app = new Vue (
             ],
 
             activeIndex: 0,
+            activeDropDown: 0,
+            isMenuShown: false, 
             userInputText: '',
             userSearch: '',
            
                        
         },
-
-        // computed: {
-        //     filteredList() {
-        //         return this.contacts.filter(contact => {
-        //             return contact.name.toLowerCase().includes(this.userSearch.toLowerCase())
-        //         })
-
-        //     }
-
-            
-        // },
-
-
-        
 
 
         methods: {
@@ -238,7 +226,12 @@ const app = new Vue (
             },
 
 
-            
+            activateDropDown: function() {
+                this.isMenuShown = !this.isMenuShown;
+                this.activeDropDown = this.activeIndex;
+
+            }
+
 
         },
 
