@@ -172,17 +172,19 @@ const app = new Vue (
             activeIndex: 0,
             userInputText: '',
             userSearch: '',
-
-            computed: {
-                filteredList() {
-                    return this.contacts.filter(contact => {
-                        return contact.name.toLowerCase().includes(this.userSearch.toLowerCase())
-                }),
-
-            },
-            
+           
                        
         },
+
+        computed: {
+            filteredList() {
+                return this.contacts.filter(contact => {
+                    return contact.name.toLowerCase().includes(this.userSearch.toLowerCase())
+                })
+            }
+        },
+        
+
 
         methods: {
             setActiveElement: function(indexValue){
@@ -211,11 +213,6 @@ const app = new Vue (
     
                 }, 1000);
 
-            },
-
-            filteredList: function() {
-                
-                });
             },
 
         },
