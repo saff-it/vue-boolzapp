@@ -200,7 +200,7 @@ const app = new Vue (
 
 
             newMessagePush: function(){
-                
+
                 this.contacts[this.activeIndex].messages.push(
                     {
                         date:'10/01/2020 15:30:55',
@@ -223,13 +223,13 @@ const app = new Vue (
             },
 
 
-            listFilter() {
-                this.contacts.foreach(contact => {
-                    if (this.contact.name.toLowerCase().includes(this.userSearch.toLowerCase())){
-                        this.contacts.visible == true;
+            listFilter: function() {
+                this.contacts.foreach(element => {
+                    if (this.element.name.toLowerCase().includes(this.userSearch.toLowerCase())){
+                        this.element.visible == true;
 
                     } else {
-                        this.contacts.visible == false;
+                        this.element.visible == false;
 
                     }
 
