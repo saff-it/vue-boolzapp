@@ -176,13 +176,18 @@ const app = new Vue (
                        
         },
 
-        computed: {
-            filteredList() {
-                return this.contacts.filter(contact => {
-                    return contact.name.toLowerCase().includes(this.userSearch.toLowerCase())
-                })
-            }
-        },
+        // computed: {
+        //     filteredList() {
+        //         return this.contacts.filter(contact => {
+        //             return contact.name.toLowerCase().includes(this.userSearch.toLowerCase())
+        //         })
+
+        //     }
+
+            
+        // },
+
+
         
 
 
@@ -213,6 +218,16 @@ const app = new Vue (
     
                 }, 1000);
 
+            },
+
+            listFilter: function(index){
+                if (this.contact[index].name.toLowerCase().includes(this.userSearch.toLowerCase())){
+                    this.contacts[index].visible == true;
+
+                } else {
+                    this.contacts[index].visible == false;
+
+                }
             },
 
         },

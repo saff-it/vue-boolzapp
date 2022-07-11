@@ -81,7 +81,7 @@
                                             <div class="form-control ms_src-icon ">
                                                 <i class="bi bi-search"></i>
                                             </div>
-                                            <input class="form-control " type="search" v-model="userSearch" placeholder="Cerca..." aria-label="Search">
+                                            <input class="form-control " type="search" @keyUp="listFilter()" v-model="userSearch" placeholder="Cerca..." aria-label="Search">
                                    
                                         </div>
 
@@ -91,7 +91,8 @@
                                             <div class="ms_single-cntct-box" 
                                                 :class="{ active: index === activeIndex }"
                                                 @click="setActiveElement(index)"
-                                                v-for="(contact, index) in filteredList"
+                                                v-for="(contact, index) in contacts"
+                                                v-if="contacts.visible == 'true' "
                                             >
                                                 <img :src="'./img/avatar' + contact.avatar + '.jpg' " alt="avatar">
 
