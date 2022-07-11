@@ -188,12 +188,15 @@ div.ms_message.sent{
     align-self: flex-end;
 }
 
-button.dropdown{
-    background: none;
-    color: dimgray;
-    border: none;
-    padding: 0;
+i.bi-caret-down-fill{
+    cursor: pointer;
 }
+
+ul.ms_active-dd{
+    list-style: none;
+    display: none;
+}
+
 
 
 /* bottom input bar  */
