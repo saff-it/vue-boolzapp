@@ -91,7 +91,7 @@
                                             <div class="ms_single-cntct-box" 
                                                 :class="{ active: index === activeIndex }"
                                                 @click="setActiveElement(index)"
-                                                v-for="(contact, index) in contacts"
+                                                v-for="(contact, index) in filteredList"
                                             >
                                                 <img :src="'./img/avatar' + contact.avatar + '.jpg' " alt="avatar">
 
