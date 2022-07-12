@@ -226,9 +226,9 @@ const app = new Vue (
             },
 
 
-            activateDropDown: function() {
+            activateDropDown: function(indexValue) {
                 this.isMenuShown = !this.isMenuShown;
-                this.activeDropDown = this.activeIndex;
+                this.activeDropDown = indexValue;
 
             }
 

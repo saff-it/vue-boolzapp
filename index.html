@@ -92,7 +92,7 @@
                                                 :class="{ active: index === activeIndex }"
                                                 @click="setActiveElement(index)"
                                                 v-for="(contact, index) in contacts"
-                                                v-if="contact.visible" 
+                                                
                                             >
                                                 <img :src="'./img/avatar' + contact.avatar + '.jpg' " alt="avatar">
 
@@ -159,15 +159,14 @@
 
                                                         <div>
                                                             <i class="bi bi-caret-down-fill"
-                                                                @click="activateDropDown()"
-                                                                
-
+                                                                @click="activateDropDown(activeIndex)"
+                                                            
                                                             >
                                                             </i>
 
                                                             <ul class="ms_disactive-dd"
                                                                 v-if="isMenuShown == true"
-                                                                :class="{ 'ms_active-dd': activeIndex === activeDropDown }"
+                                                                :class="{ 'ms_active-dd': activeDropDown == activeIndex }"
                                                             >
                                                                 <li>Elimina Messaggio</li>
                                                             </ul>
@@ -182,7 +181,7 @@
 
                                                 </div>
                                             
-                                            </div class="col-6">
+                                            </div>
                                           
                                         </div>
 
@@ -197,7 +196,7 @@
                                                     <div> {{ userMessage.date }} </div> 
                                                 </div>
                                             
-                                            </div class="col-6">
+                                            </div>
                                           
                                         </div>
 
